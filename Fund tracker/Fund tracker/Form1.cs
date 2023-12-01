@@ -43,6 +43,9 @@ namespace Fund_tracker
                     if ((password_exist == textBox2.Text))
                     {
                         MessageBox.Show("Welcome " + Username_exist, "Log in Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+                        Form3 form = new Form3(Email_exist);
+                        form.Show();
                     } else
                     {
                         MessageBox.Show("Password Doesn't match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -50,7 +53,7 @@ namespace Fund_tracker
                 } else if (Email_exist == textBox1.Text)
                 {
                     MySqlCommand Pass_exist = new MySqlCommand("SELECT Auth_Password from auth where Auth_Email=@email", conn);
-                    Pass_exist.Parameters.AddWithValue("@email", textBox2.Text);
+                    Pass_exist.Parameters.AddWithValue("@email", textBox1.Text);
                     string password_exist = (string)Pass_exist.ExecuteScalar();
                     if ((password_exist == textBox2.Text))
                     {
@@ -58,6 +61,9 @@ namespace Fund_tracker
                         U_email.Parameters.AddWithValue("@email", textBox1.Text);
                         string User_email = (string)E_exist.ExecuteScalar();
                         MessageBox.Show("Welcome " + User_email, "Log in Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Form3 form = new Form3(Email_exist);
+                        form.Show();
+                        this.Hide();
                     } else
                     {
                         MessageBox.Show("Password Doesn't match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

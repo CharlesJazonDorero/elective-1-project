@@ -74,4 +74,4 @@ C:\Users\charl\OneDrive\Desktop\elective 1 project\Fund tracker\Fund tracker\obj
 C:\Users\charl\OneDrive\Desktop\elective 1 project\Fund tracker\Fund tracker\obj\Debug\net6.0-windows\ref\Fund tracker.dll
 C:\Users\charl\OneDrive\Desktop\elective 1 project\Fund tracker\Fund tracker\obj\Debug\net6.0-windows\Fund_tracker.Form3.resources
 C:\Users\charl\OneDrive\Desktop\elective 1 project\Fund tracker\Fund tracker\obj\Debug\net6.0-windows\Fund_tracker.Form4.resources
-C:\Users\charl\OneDrive\Desktop\elective 1 project\Fund tracker\Fund tracker\obj\Debug\net6.0-windows\Fund_tracker.Form5.resources
+C:\Users\charl\OneDrive\Desktop\elective 1 project\Fund tracker\Fund tracker\obj\Debug\net6.0-windows\Fund tracker.sourcelink.json

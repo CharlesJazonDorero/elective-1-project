@@ -39,6 +39,15 @@
             label5 = new Label();
             textBox5 = new TextBox();
             groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            label6 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            checkBox3 = new CheckBox();
+            checkBox2 = new CheckBox();
+            checkBox1 = new CheckBox();
+            label8 = new Label();
+            label7 = new Label();
             dateTimePicker5 = new DateTimePicker();
             dateTimePicker4 = new DateTimePicker();
             dateTimePicker3 = new DateTimePicker();
@@ -46,15 +55,6 @@
             dateTimePicker1 = new DateTimePicker();
             button2 = new Button();
             button1 = new Button();
-            label7 = new Label();
-            label8 = new Label();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
-            label6 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            groupBox2 = new GroupBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -172,6 +172,99 @@
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
             // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(label6);
+            groupBox2.Controls.Add(label10);
+            groupBox2.Controls.Add(label9);
+            groupBox2.Location = new Point(205, 252);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(222, 41);
+            groupBox2.TabIndex = 9;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Tags";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(13, 19);
+            label6.Name = "label6";
+            label6.Size = new Size(75, 15);
+            label6.TabIndex = 8;
+            label6.Text = "E - Electricity";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(161, 19);
+            label10.Name = "label10";
+            label10.Size = new Size(49, 15);
+            label10.TabIndex = 8;
+            label10.Text = "R - Rent";
+            label10.Click += label9_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(94, 19);
+            label9.Name = "label9";
+            label9.Size = new Size(60, 15);
+            label9.TabIndex = 8;
+            label9.Text = "W - Water";
+            label9.Click += label9_Click;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.Location = new Point(376, 70);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(33, 19);
+            checkBox3.TabIndex = 7;
+            checkBox3.Text = "R";
+            checkBox3.UseVisualStyleBackColor = true;
+            checkBox3.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(333, 70);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(37, 19);
+            checkBox2.TabIndex = 7;
+            checkBox2.Text = "W";
+            checkBox2.UseVisualStyleBackColor = true;
+            checkBox2.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(295, 70);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(32, 19);
+            checkBox1.TabIndex = 7;
+            checkBox1.Text = "E";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(216, 12);
+            label8.Name = "label8";
+            label8.Size = new Size(44, 15);
+            label8.TabIndex = 6;
+            label8.Text = "&Money";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(511, 12);
+            label7.Name = "label7";
+            label7.Size = new Size(82, 15);
+            label7.TabIndex = 5;
+            label7.Text = "&Date Modified";
+            label7.Click += label7_Click;
+            // 
             // dateTimePicker5
             // 
             dateTimePicker5.Location = new Point(423, 181);
@@ -225,98 +318,7 @@
             button1.TabIndex = 2;
             button1.Text = "Save";
             button1.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(511, 12);
-            label7.Name = "label7";
-            label7.Size = new Size(31, 15);
-            label7.TabIndex = 5;
-            label7.Text = "&Date";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(216, 12);
-            label8.Name = "label8";
-            label8.Size = new Size(44, 15);
-            label8.TabIndex = 6;
-            label8.Text = "&Money";
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(295, 70);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(32, 19);
-            checkBox1.TabIndex = 7;
-            checkBox1.Text = "E";
-            checkBox1.UseVisualStyleBackColor = true;
-            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
-            // 
-            // checkBox2
-            // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(333, 70);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(37, 19);
-            checkBox2.TabIndex = 7;
-            checkBox2.Text = "W";
-            checkBox2.UseVisualStyleBackColor = true;
-            checkBox2.CheckedChanged += checkBox1_CheckedChanged;
-            // 
-            // checkBox3
-            // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(376, 70);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(33, 19);
-            checkBox3.TabIndex = 7;
-            checkBox3.Text = "R";
-            checkBox3.UseVisualStyleBackColor = true;
-            checkBox3.CheckedChanged += checkBox1_CheckedChanged;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(13, 19);
-            label6.Name = "label6";
-            label6.Size = new Size(75, 15);
-            label6.TabIndex = 8;
-            label6.Text = "E - Electricity";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(94, 19);
-            label9.Name = "label9";
-            label9.Size = new Size(60, 15);
-            label9.TabIndex = 8;
-            label9.Text = "W - Water";
-            label9.Click += label9_Click;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(161, 19);
-            label10.Name = "label10";
-            label10.Size = new Size(49, 15);
-            label10.TabIndex = 8;
-            label10.Text = "R - Rent";
-            label10.Click += label9_Click;
-            // 
-            // groupBox2
-            // 
-            groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(label10);
-            groupBox2.Controls.Add(label9);
-            groupBox2.Location = new Point(207, 263);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(222, 41);
-            groupBox2.TabIndex = 9;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Tags";
+            button1.Click += button1_Click;
             // 
             // Form4
             // 
