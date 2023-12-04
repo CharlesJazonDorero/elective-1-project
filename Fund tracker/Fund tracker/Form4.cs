@@ -15,7 +15,7 @@ namespace Fund_tracker
     public partial class Form4 : Form
     {
         private string Email;
-        public Form4(string Email)
+        public Form4(string User)
         {
             InitializeComponent();
             this.Email = Email;
@@ -29,7 +29,7 @@ namespace Fund_tracker
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 form = new Form3();
+            Form3 form = new Form3(Email);
             form.Show();
         }
 
@@ -45,11 +45,13 @@ namespace Fund_tracker
 
         private void button1_Click(object sender, EventArgs e)
         {
+            label8.Text = this.Email;
             MySqlConnection conn = new MySqlConnection("server=localhost;port=3306;username=root;password=root;database=accounts_sql");
             try
             {
                 conn.Open();
                 Form1 form1 = new Form1();
+                
                 
             }
             catch (Exception ex)

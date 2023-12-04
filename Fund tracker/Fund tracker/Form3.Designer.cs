@@ -32,6 +32,9 @@
             button2 = new Button();
             button3 = new Button();
             groupBox1 = new GroupBox();
+            label1 = new Label();
+            label2 = new Label();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -65,11 +68,31 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(12, 41);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(327, 288);
             groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(6, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(40, 15);
+            label1.TabIndex = 0;
+            label1.Text = "&Fund: ";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(65, 19);
+            label2.Name = "label2";
+            label2.Size = new Size(31, 15);
+            label2.TabIndex = 0;
+            label2.Text = "0000";
             // 
             // Form3
             // 
@@ -82,6 +105,8 @@
             Controls.Add(button1);
             Name = "Form3";
             Text = "options";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -91,5 +116,7 @@
         private Button button2;
         private Button button3;
         private GroupBox groupBox1;
+        private Label label1;
+        private Label label2;
     }
 }
