@@ -246,7 +246,7 @@ namespace Fund_tracker
                         string Province_exist = (string)Province_text.ExecuteScalar();
                         if (Province_exist == textBox8.Text)
                         {
-                            string insert_all = "INSERT INTO gender_(Gender) VALUES(@gender);" +
+                            string insert_all = "INSERT INTO gender_(Gender) VALUES(@gender);" +    
                             "INSERT INTO city(City_Name) VALUES(@city_name);" +
                             "INSERT INTO main(Username, birthday, email, Gender) SELECT @username, @birthday, @email, Gender_id FROM gender_ WHERE Gender=@gender;" +
                             "INSERT INTO details(First_Name, Middle_Name, Last_Name, Street, City, Province) SELECT @first_name, @middle_name, @last_name, @street, City_id, Province_id FROM city, province WHERE City_Name=@city_name and Province_Name=@province_name;" +

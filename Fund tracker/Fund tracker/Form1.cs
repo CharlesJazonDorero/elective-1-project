@@ -44,7 +44,7 @@ namespace Fund_tracker
                     {
                         MessageBox.Show("Welcome " + Username_exist, "Log in Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Hide();
-                        Form3 form = new Form3(Username_exist);
+                        Form3 form = new Form3(Email_exist);
                         form.Show();
                     } else
                     {
@@ -61,7 +61,7 @@ namespace Fund_tracker
                         U_email.Parameters.AddWithValue("@email", textBox1.Text);
                         string User_email = (string)E_exist.ExecuteScalar();
                         MessageBox.Show("Welcome " + User_email, "Log in Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Form3 form = new Form3(Username_exist);
+                        Form3 form = new Form3(Email_exist);
                         form.Show();
                         this.Hide();
                     } else

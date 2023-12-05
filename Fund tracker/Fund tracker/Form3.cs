@@ -12,14 +12,14 @@ namespace Fund_tracker
 {
     public partial class Form3 : Form
     {
-        private string User;
-        public Form3(string Username_exist)
+        private string Email;
+        public Form3(string Email_exist)
         {
             InitializeComponent();
-            label2.Text = Username_exist;
-
-            this.User = Username_exist;
+            this.Email = Email_exist;
+            label2.Text = Email;          
         }
+
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -28,8 +28,9 @@ namespace Fund_tracker
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             this.Hide();
-            Form4 form = new Form4(User);
+            Form4 form = new Form4(Email);
             form.Show();
         }
 
