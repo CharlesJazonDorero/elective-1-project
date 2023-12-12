@@ -17,7 +17,7 @@ namespace Fund_tracker
         {
             InitializeComponent();
             this.Email = Email_exist;
-            label2.Text = Email;          
+            label4.Text = Email;          
         }
 
 

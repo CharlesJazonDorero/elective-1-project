@@ -55,6 +55,8 @@
             dateTimePicker1 = new DateTimePicker();
             button2 = new Button();
             button1 = new Button();
+            label11 = new Label();
+            label12 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -166,7 +168,7 @@
             groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label5);
-            groupBox1.Location = new Point(12, 12);
+            groupBox1.Location = new Point(12, 28);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(623, 304);
             groupBox1.TabIndex = 2;
@@ -320,12 +322,32 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(16, 10);
+            label11.Name = "label11";
+            label11.Size = new Size(33, 15);
+            label11.TabIndex = 3;
+            label11.Text = "&User:";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(45, 10);
+            label12.Name = "label12";
+            label12.Size = new Size(32, 15);
+            label12.TabIndex = 3;
+            label12.Text = "_____";
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoValidate = AutoValidate.EnableAllowFocusChange;
-            ClientSize = new Size(659, 328);
+            ClientSize = new Size(651, 344);
+            Controls.Add(label12);
+            Controls.Add(label11);
             Controls.Add(groupBox1);
             Name = "Form4";
             Text = "Edit ";
@@ -334,6 +356,7 @@
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -365,5 +388,7 @@
         private CheckBox checkBox2;
         private GroupBox groupBox2;
         private Label label10;
+        private Label label11;
+        private Label label12;
     }
 }
