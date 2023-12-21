@@ -1,4 +1,5 @@
 using MySql.Data.MySqlClient;
+using System.Web;
 namespace Fund_tracker
 
 {
@@ -34,7 +35,7 @@ namespace Fund_tracker
                 MySqlCommand E_exist = new MySqlCommand("SELECT Auth_Email from auth where Auth_Email=@email", conn);
                 E_exist.Parameters.AddWithValue("@email", textBox1.Text);
                 string Email_exist = (string)E_exist.ExecuteScalar();
-
+                string account;
                 if (Username_exist == textBox1.Text)
                 {
                     MySqlCommand Pass_exist = new MySqlCommand("SELECT Auth_Password from auth where Auth_User_Name=@username", conn);
@@ -42,9 +43,10 @@ namespace Fund_tracker
                     string password_exist = (string)Pass_exist.ExecuteScalar();
                     if ((password_exist == textBox2.Text))
                     {
+                        account = Username_exist;
                         MessageBox.Show("Welcome " + Username_exist, "Log in Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Hide();
-                        Form3 form = new Form3(Email_exist);
+                        Form3 form = new Form3(account);
                         form.Show();
                     } else
                     {
@@ -57,11 +59,12 @@ namespace Fund_tracker
                     string password_exist = (string)Pass_exist.ExecuteScalar();
                     if ((password_exist == textBox2.Text))
                     {
+                        account = Email_exist;
                         MySqlCommand U_email = new MySqlCommand("SELECT Auth_User_Name from auth where Auth_Email=@email", conn);
                         U_email.Parameters.AddWithValue("@email", textBox1.Text);
                         string User_email = (string)E_exist.ExecuteScalar();
                         MessageBox.Show("Welcome " + User_email, "Log in Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Form3 form = new Form3(Email_exist);
+                        Form3 form = new Form3(account);
                         form.Show();
                         this.Hide();
                     } else

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             label1 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
@@ -64,9 +65,10 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label1.Location = new Point(16, 34);
             label1.Name = "label1";
-            label1.Size = new Size(78, 15);
+            label1.Size = new Size(88, 15);
             label1.TabIndex = 0;
             label1.Text = "&Total Income:";
             // 
@@ -80,9 +82,10 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(16, 109);
             label2.Name = "label2";
-            label2.Size = new Size(116, 15);
+            label2.Size = new Size(137, 15);
             label2.TabIndex = 0;
             label2.Text = "&Total Food Expenses:";
             // 
@@ -91,14 +94,15 @@
             textBox2.Location = new Point(189, 66);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 1;
+            textBox2.TabIndex = 2;
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(16, 69);
             label3.Name = "label3";
-            label3.Size = new Size(59, 15);
+            label3.Size = new Size(68, 15);
             label3.TabIndex = 0;
             label3.Text = "&Total Bills:";
             // 
@@ -107,14 +111,15 @@
             textBox3.Location = new Point(189, 106);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 1;
+            textBox3.TabIndex = 3;
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(16, 144);
             label4.Name = "label4";
-            label4.Size = new Size(147, 15);
+            label4.Size = new Size(174, 15);
             label4.TabIndex = 0;
             label4.Text = "&Total Necessities Expenses:";
             // 
@@ -123,15 +128,16 @@
             textBox4.Location = new Point(189, 141);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 1;
+            textBox4.TabIndex = 4;
             textBox4.TextChanged += textBox4_TextChanged;
             // 
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label5.Location = new Point(16, 184);
             label5.Name = "label5";
-            label5.Size = new Size(50, 15);
+            label5.Size = new Size(55, 15);
             label5.TabIndex = 0;
             label5.Text = "&Savings:";
             // 
@@ -140,7 +146,7 @@
             textBox5.Location = new Point(189, 181);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 1;
+            textBox5.TabIndex = 5;
             textBox5.TextChanged += textBox4_TextChanged;
             // 
             // groupBox1
@@ -179,6 +185,7 @@
             groupBox2.Controls.Add(label6);
             groupBox2.Controls.Add(label10);
             groupBox2.Controls.Add(label9);
+            groupBox2.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             groupBox2.Location = new Point(205, 252);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(222, 41);
@@ -191,7 +198,7 @@
             label6.AutoSize = true;
             label6.Location = new Point(13, 19);
             label6.Name = "label6";
-            label6.Size = new Size(75, 15);
+            label6.Size = new Size(84, 15);
             label6.TabIndex = 8;
             label6.Text = "E - Electricity";
             // 
@@ -200,7 +207,7 @@
             label10.AutoSize = true;
             label10.Location = new Point(161, 19);
             label10.Name = "label10";
-            label10.Size = new Size(49, 15);
+            label10.Size = new Size(54, 15);
             label10.TabIndex = 8;
             label10.Text = "R - Rent";
             label10.Click += label9_Click;
@@ -210,7 +217,7 @@
             label9.AutoSize = true;
             label9.Location = new Point(94, 19);
             label9.Name = "label9";
-            label9.Size = new Size(60, 15);
+            label9.Size = new Size(65, 15);
             label9.TabIndex = 8;
             label9.Text = "W - Water";
             label9.Click += label9_Click;
@@ -218,9 +225,10 @@
             // checkBox3
             // 
             checkBox3.AutoSize = true;
+            checkBox3.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             checkBox3.Location = new Point(376, 70);
             checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(33, 19);
+            checkBox3.Size = new Size(34, 19);
             checkBox3.TabIndex = 7;
             checkBox3.Text = "R";
             checkBox3.UseVisualStyleBackColor = true;
@@ -229,6 +237,7 @@
             // checkBox2
             // 
             checkBox2.AutoSize = true;
+            checkBox2.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             checkBox2.Location = new Point(333, 70);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(37, 19);
@@ -240,9 +249,10 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
+            checkBox1.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             checkBox1.Location = new Point(295, 70);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(32, 19);
+            checkBox1.Size = new Size(33, 19);
             checkBox1.TabIndex = 7;
             checkBox1.Text = "E";
             checkBox1.UseVisualStyleBackColor = true;
@@ -251,18 +261,20 @@
             // label8
             // 
             label8.AutoSize = true;
+            label8.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label8.Location = new Point(216, 12);
             label8.Name = "label8";
-            label8.Size = new Size(44, 15);
+            label8.Size = new Size(45, 15);
             label8.TabIndex = 6;
             label8.Text = "&Money";
             // 
             // label7
             // 
             label7.AutoSize = true;
+            label7.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label7.Location = new Point(511, 12);
             label7.Name = "label7";
-            label7.Size = new Size(82, 15);
+            label7.Size = new Size(91, 15);
             label7.TabIndex = 5;
             label7.Text = "&Date Modified";
             label7.Click += label7_Click;
@@ -272,52 +284,55 @@
             dateTimePicker5.Location = new Point(423, 181);
             dateTimePicker5.Name = "dateTimePicker5";
             dateTimePicker5.Size = new Size(194, 23);
-            dateTimePicker5.TabIndex = 3;
+            dateTimePicker5.TabIndex = 8;
             // 
             // dateTimePicker4
             // 
-            dateTimePicker4.Location = new Point(423, 138);
+            dateTimePicker4.Location = new Point(423, 141);
             dateTimePicker4.Name = "dateTimePicker4";
             dateTimePicker4.Size = new Size(194, 23);
-            dateTimePicker4.TabIndex = 3;
+            dateTimePicker4.TabIndex = 8;
             // 
             // dateTimePicker3
             // 
             dateTimePicker3.Location = new Point(423, 106);
             dateTimePicker3.Name = "dateTimePicker3";
             dateTimePicker3.Size = new Size(194, 23);
-            dateTimePicker3.TabIndex = 3;
+            dateTimePicker3.TabIndex = 8;
             // 
             // dateTimePicker2
             // 
             dateTimePicker2.Location = new Point(423, 66);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(194, 23);
-            dateTimePicker2.TabIndex = 3;
+            dateTimePicker2.TabIndex = 8;
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.CustomFormat = "";
             dateTimePicker1.Location = new Point(423, 31);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(194, 23);
-            dateTimePicker1.TabIndex = 3;
+            dateTimePicker1.TabIndex = 8;
             // 
             // button2
             // 
+            button2.Font = new Font("Lucida Fax", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button2.Location = new Point(16, 252);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
-            button2.TabIndex = 2;
+            button2.TabIndex = 7;
             button2.Text = "Cancel";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
             // button1
             // 
+            button1.Font = new Font("Lucida Fax", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(542, 252);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
-            button1.TabIndex = 2;
+            button1.TabIndex = 6;
             button1.Text = "Save";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
@@ -325,18 +340,20 @@
             // label11
             // 
             label11.AutoSize = true;
+            label11.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label11.Location = new Point(16, 10);
             label11.Name = "label11";
-            label11.Size = new Size(33, 15);
+            label11.Size = new Size(37, 15);
             label11.TabIndex = 3;
             label11.Text = "&User:";
             // 
             // label12
             // 
             label12.AutoSize = true;
+            label12.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label12.Location = new Point(45, 10);
             label12.Name = "label12";
-            label12.Size = new Size(32, 15);
+            label12.Size = new Size(37, 15);
             label12.TabIndex = 3;
             label12.Text = "_____";
             // 
@@ -345,11 +362,15 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoValidate = AutoValidate.EnableAllowFocusChange;
+            BackColor = Color.LightCyan;
             ClientSize = new Size(651, 344);
             Controls.Add(label12);
             Controls.Add(label11);
             Controls.Add(groupBox1);
+            ForeColor = SystemColors.ActiveCaptionText;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form4";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Edit ";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

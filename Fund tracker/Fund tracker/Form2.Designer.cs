@@ -28,285 +28,301 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            button1 = new Button();
+            button2 = new Button();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            dateTimePicker1 = new DateTimePicker();
+            textBox5 = new TextBox();
+            textBox6 = new TextBox();
+            textBox7 = new TextBox();
+            textBox8 = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            textBox9 = new TextBox();
+            label11 = new Label();
+            textBox10 = new TextBox();
+            label12 = new Label();
+            SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(19, 466);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Font = new Font("Lucida Fax", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(19, 466);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 13;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(251, 466);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Sign up";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Font = new Font("Lucida Fax", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Location = new Point(251, 466);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 12;
+            button2.Text = "Sign up";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 23);
-            this.textBox1.TabIndex = 1;
+            textBox1.Location = new Point(126, 96);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(200, 23);
+            textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 153);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 23);
-            this.textBox2.TabIndex = 3;
+            textBox2.Location = new Point(126, 153);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(200, 23);
+            textBox2.TabIndex = 3;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(126, 185);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 23);
-            this.textBox3.TabIndex = 4;
+            textBox3.Location = new Point(126, 185);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(200, 23);
+            textBox3.TabIndex = 4;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(126, 214);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 23);
-            this.textBox4.TabIndex = 5;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            textBox4.Location = new Point(126, 214);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(200, 23);
+            textBox4.TabIndex = 5;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dateTimePicker1.CustomFormat = "MM/dd/yy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(126, 276);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker1.TabIndex = 7;
-            this.dateTimePicker1.Value = new System.DateTime(2023, 8, 19, 15, 34, 27, 0);
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            dateTimePicker1.Cursor = Cursors.IBeam;
+            dateTimePicker1.CustomFormat = "MM/dd/yy";
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.Location = new Point(126, 276);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.TabIndex = 7;
+            dateTimePicker1.Value = new DateTime(2023, 8, 19, 15, 34, 27, 0);
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(126, 311);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(200, 23);
-            this.textBox5.TabIndex = 8;
+            textBox5.Location = new Point(126, 311);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(200, 23);
+            textBox5.TabIndex = 8;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(126, 347);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 23);
-            this.textBox6.TabIndex = 9;
+            textBox6.Location = new Point(126, 347);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(200, 23);
+            textBox6.TabIndex = 9;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(126, 379);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(200, 23);
-            this.textBox7.TabIndex = 10;
+            textBox7.Location = new Point(126, 379);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(200, 23);
+            textBox7.TabIndex = 10;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(126, 414);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(200, 23);
-            this.textBox8.TabIndex = 11;
-            this.textBox8.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            textBox8.Location = new Point(126, 414);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(200, 23);
+            textBox8.TabIndex = 11;
+            textBox8.TextChanged += textBox4_TextChanged;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(148, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 30);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "SIGN UP";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            label1.AutoSize = true;
+            label1.Font = new Font("Showcard Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(148, 31);
+            label1.Name = "label1";
+            label1.Size = new Size(102, 30);
+            label1.TabIndex = 7;
+            label1.Text = "SIGN UP";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += label1_Click;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 99);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 15);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "User Name:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(19, 99);
+            label2.Name = "label2";
+            label2.Size = new Size(74, 15);
+            label2.TabIndex = 8;
+            label2.Text = "User Name:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 153);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 15);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "First Name:";
+            label3.AutoSize = true;
+            label3.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(19, 153);
+            label3.Name = "label3";
+            label3.Size = new Size(74, 15);
+            label3.TabIndex = 8;
+            label3.Text = "First Name:";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 185);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 15);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Last Name:";
+            label4.AutoSize = true;
+            label4.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(19, 185);
+            label4.Name = "label4";
+            label4.Size = new Size(72, 15);
+            label4.TabIndex = 8;
+            label4.Text = "Last Name:";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 215);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 15);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Middle Name:";
+            label5.AutoSize = true;
+            label5.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(19, 215);
+            label5.Name = "label5";
+            label5.Size = new Size(86, 15);
+            label5.TabIndex = 8;
+            label5.Text = "Middle Name:";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 282);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 15);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Birthday:";
+            label6.AutoSize = true;
+            label6.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(19, 282);
+            label6.Name = "label6";
+            label6.Size = new Size(58, 15);
+            label6.TabIndex = 8;
+            label6.Text = "Birthday:";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(19, 314);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 15);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Email:";
+            label7.AutoSize = true;
+            label7.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(19, 314);
+            label7.Name = "label7";
+            label7.Size = new Size(41, 15);
+            label7.TabIndex = 8;
+            label7.Text = "Email:";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(19, 347);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(40, 15);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Street:";
+            label8.AutoSize = true;
+            label8.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(19, 347);
+            label8.Name = "label8";
+            label8.Size = new Size(46, 15);
+            label8.TabIndex = 8;
+            label8.Text = "Street:";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(19, 379);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(31, 15);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "City:";
+            label9.AutoSize = true;
+            label9.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Location = new Point(19, 379);
+            label9.Name = "label9";
+            label9.Size = new Size(33, 15);
+            label9.TabIndex = 8;
+            label9.Text = "City:";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(19, 414);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 15);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Province:";
+            label10.AutoSize = true;
+            label10.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Location = new Point(19, 414);
+            label10.Name = "label10";
+            label10.Size = new Size(60, 15);
+            label10.TabIndex = 8;
+            label10.Text = "Province:";
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(126, 240);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(200, 23);
-            this.textBox9.TabIndex = 6;
-            this.textBox9.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            textBox9.Location = new Point(126, 240);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(200, 23);
+            textBox9.TabIndex = 6;
+            textBox9.TextChanged += textBox4_TextChanged;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(19, 243);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(45, 15);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Gender";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            label11.AutoSize = true;
+            label11.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Location = new Point(19, 243);
+            label11.Name = "label11";
+            label11.Size = new Size(50, 15);
+            label11.TabIndex = 8;
+            label11.Text = "Gender";
+            label11.Click += label11_Click;
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(126, 124);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(200, 23);
-            this.textBox10.TabIndex = 2;
+            textBox10.Location = new Point(126, 124);
+            textBox10.Name = "textBox10";
+            textBox10.Size = new Size(200, 23);
+            textBox10.TabIndex = 2;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(19, 127);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 15);
-            this.label12.TabIndex = 8;
-            this.label12.Text = "Password:";
+            label12.AutoSize = true;
+            label12.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.Location = new Point(19, 127);
+            label12.Name = "label12";
+            label12.Size = new Size(67, 15);
+            label12.TabIndex = 8;
+            label12.Text = "Password:";
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 518);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "Form2";
-            this.Text = "Sign Up";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightCyan;
+            ClientSize = new Size(372, 518);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label11);
+            Controls.Add(label5);
+            Controls.Add(label7);
+            Controls.Add(label4);
+            Controls.Add(label6);
+            Controls.Add(label3);
+            Controls.Add(label12);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(textBox8);
+            Controls.Add(textBox9);
+            Controls.Add(textBox4);
+            Controls.Add(textBox7);
+            Controls.Add(textBox3);
+            Controls.Add(textBox6);
+            Controls.Add(textBox5);
+            Controls.Add(textBox2);
+            Controls.Add(textBox10);
+            Controls.Add(textBox1);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "Form2";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Sign Up";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

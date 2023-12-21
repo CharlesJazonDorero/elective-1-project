@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             linkLabel1 = new LinkLabel();
             label1 = new Label();
             button1 = new Button();
@@ -60,6 +61,7 @@
             // 
             // button1
             // 
+            button1.Font = new Font("Lucida Fax", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(99, 248);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
@@ -71,18 +73,20 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(30, 83);
             label2.Name = "label2";
-            label2.Size = new Size(63, 15);
+            label2.Size = new Size(41, 15);
             label2.TabIndex = 3;
-            label2.Text = "&Username:";
+            label2.Text = "&Email:";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Lucida Bright", 9F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(30, 139);
             label3.Name = "label3";
-            label3.Size = new Size(60, 15);
+            label3.Size = new Size(67, 15);
             label3.TabIndex = 4;
             label3.Text = "&Password:";
             // 
@@ -115,6 +119,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightCyan;
             ClientSize = new Size(277, 330);
             Controls.Add(label4);
             Controls.Add(textBox2);
@@ -124,8 +129,11 @@
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(linkLabel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Fund Tracker";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
